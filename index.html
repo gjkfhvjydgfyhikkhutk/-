@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>提示</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>提示</title>
 
-<style>
-body{
-    margin:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    background:#ffffff;
-    font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;
-}
+    <style>
+        /* 全局重置与顶部布局 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-h1{
-    color:#d7000f;
-    font-size:42px;
-    font-weight:bold;
-    text-align:center;
-}
-</style>
+        body {
+            display: flex;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: flex-start;
+            /* 垂直贴顶 */
+            min-height: 100vh;
+            background: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif;
+            padding-top: 30px;
+            /* 与顶部保持一点舒适距离 */
+        }
 
+        h1 {
+            color: #000000;
+            /* 纯黑色文字 */
+            font-size: 42px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.4;
+            max-width: 90vw;
+            word-break: break-word;
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>该证明已超过有效期限！</h1>
+    <h1>该证明已超过有效期限！</h1>
 
 </body>
 </html>
